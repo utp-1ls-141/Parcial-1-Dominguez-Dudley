@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./statics/js/app.js"></script>
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+ 
+    <title>Laboratorio</title>
+</head>
+        
+        <body>
+            
+            <!-- As a link -->
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Grupo #1: Dominguez, Eric / Dudley, Eduardo</a>
+        </nav>
+        
+        
+        <center> <h1>  Parcial #2 </h1></center>
+        
+            <div class="container">
+                <div class="row">
+            <div class="col-sm-2">         
+            </div>   
+                
+                
+          <div class="col-sm-8">
+         <fieldset>     
+          <!-- <form class="form-signin">       -->
+              <br><br>
+              <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#isomo">Comprobrar Isomorfismo</button></center>
+              <div id="isomo" class="collapse">
+                <div class="card-body">Ingrese las Palabras que desea Comprobrar Isomorfismo</div>
+                  <label >Palabra 1</label>
+                  <input type="text" id="input1" class="form-control" placeholder="Palabra 1" required="" autofocus="">
+                  <br>
+                  <label >Palabra 2</label>
+                  
+                  <input type="text" id="input2" class="form-control" placeholder="Palabra 2" required="">
+                  <br>
+
+                  <label >Palabra 3</label>
+                  
+                  <input type="text" id="input3" class="form-control" placeholder="Palabra 3" required="">
+                  <br>
+                <center> <button style="text-align: right" class="btn btn-success" id="success"   data-toggle="modal" data-target="#myModal" onclick="isIsomorphic();" >Comprobar</button></center>
+              </div>           
+            
+             <!-- </form> -->
+              </fieldset>
+                <br>
+
+              <fieldset>     
+                  <!-- <form class="form-signin">       -->
+                   
+                    <center> <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#matriz">Generar una Matriz Cuadrada</button> </center>
+                    <div id="matriz" class="collapse">
+                    <div>
+                      <div class="card-body">Ingrese un Numero para Generar una Matriz Cuadrada</div>
+                        <label >Numero "n"</label>
+                        <input type="text" id="inputn" class="form-control" placeholder="Numero 1" required="" autofocus="">
+                        <br>
+                       <center> <button style="text-align: right" class="btn btn-success" id="success"  data-toggle="modal" data-target="#myModal" onclick="matrizG();" >Comprobar</button></center>
+                      </div>
+                    </div>
+
+                     <!-- </form> -->
+              </fieldset>
+
+              <br>
+              <fieldset>     
+                <!-- <form class="form-signin">       -->
+                    <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#doble">Doble Palindromo</button></center>
+                    <div id="doble" class="collapse"> 
+                    <div>
+                      <div class="card-body">Ingrese un Numero para Verificar si es Doble Palindromo</div>
+                      <label >Numero "n"</label>
+                      <input type="text" id="inputnp" class="form-control" placeholder="Numero 1" required="" autofocus="">
+                      <br>
+                     <center> <button style="text-align: right" class="btn btn-success" id="success"  data-toggle="modal" data-target="#myModal" onclick="palindromoT();" >Comprobar</button></center>
+
+                    </div>
+                    </div>
+                   <!-- </form> -->
+            </fieldset>
+
+            <br>
+              <fieldset>     
+                <!-- <form class="form-signin">       -->
+                    <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">Puntos Extra</button></center>
+                    <div id="demo4" class="collapse"> 
+                    <div>
+                      <div class="card-body">Ingrese un Numero para Verificar si sus iteraciones son numeros primos</div>
+                      <label >Numero "n"</label>
+                      <input type="text" id="inputnper" class="form-control" placeholder="Numero 1" required="" autofocus="">
+                      <br>
+                     <center> <button style="text-align: right" class="btn btn-success" id="success"  data-toggle="modal" data-target="#myModal" onclick="permutaP();" >Comprobar</button></center>
+
+                    </div>
+                    </div>
+                   <!-- </form> -->
+            </fieldset>
+
+                              <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 style="color: darkblue" class="modal-title">Resultado</h4>
+            </div>
+            <div class="modal-body">
+              <p style="color: red; font-weight: bold"  id="error"></p>
+             <center> <p style="color: green; font-weight: bold"  id="successm"></p></center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+  </div>
+            </div>
+              
+              
+              
+         <div class="col-sm-2">         
+         </div>
+        
+             
+            </div>
+            </div> <!-- /container -->
+            
+        
+        
+        
+           
+          <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+            <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        
+        </body></html>
+
+
+<!-- Dominguez, Eric      8-908-2323
+     Dudley, Eduardo      8-920-232 -->  
